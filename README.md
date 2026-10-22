@@ -36,6 +36,16 @@ You need Node.js 18 or newer.
 
    You should see `Logged in as ...`. The slash commands appear in your server straight away.
 
+## Running it on a Linux server (Ubuntu or Debian)
+
+SSH in and paste:
+
+```
+curl -fsSL https://raw.githubusercontent.com/elfsmelf/tag-passport-bot/main/setup.sh | bash
+```
+
+It installs Node and pm2 if they're missing, downloads the code, asks for your bot token and server ID, and starts the bot so it survives crashes and reboots. Run the same line again any time to update to the latest code. Your token and server ID are kept.
+
 ## Keeping it running
 
 The bot only works while `npm start` is running. Leaving it on your own computer is fine for a weekend festival. For something always on, use a small host like Railway, Fly.io or a cheap VPS.
